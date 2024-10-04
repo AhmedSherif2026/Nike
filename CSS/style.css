@@ -1,0 +1,263 @@
+*
+{
+    box-sizing: border-box;
+}
+body{
+    height: 2700px;
+}
+.header img{
+    width: 180px;
+    height: 80px;
+    float: left;
+    margin-left: 80px;
+}
+.header-list{
+    list-style: none;
+    display: inline-block;
+    font-size: 22px;
+    word-spacing: 25px;
+    margin-left: 130px;
+}
+li{
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+}
+li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-left: transparent;
+    border-right: transparent;
+    transform: scalex(0);
+    transition: 0.5s;
+}
+li:hover::after{
+    transform: scalex(1);
+}
+
+.icons{
+    float: right;
+    margin-right: 80px;
+    margin-top: 25px;
+    font-size: 25px;
+    word-spacing: 20px;
+}
+a{
+    color: black;
+}
+
+.Spicial-Category{
+    text-align: center;
+}
+.khat{
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    background-color: black;
+    transition: 1s;
+}
+.items-parents img{
+    width: 250px;
+    height: 250px;
+}
+.items-parents{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+height: 500px;
+overflow: auto;
+}
+.item i{
+    opacity: 0;
+    font-size: 20px;
+}
+.item:hover i{
+    opacity: 1;
+}
+.t-shirt-collect
+{
+    display: inline;
+}
+.item
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+
+}
+.item img{
+    left: 50%;
+    top: 35%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.item-content{
+    left: 32%;
+    top: 80%;
+    position: absolute;
+    transform: translate(-30%,-30%); 
+    color: aliceblue;
+}
+.paragrph-content{
+    width: 650px;
+    height: 250px;
+    background-color: rgb(211, 211, 211);
+}
+.discount-img img
+{
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+}
+.section2-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.discount-img img:hover{
+    transform: scale(1.2);
+}
+.item a{
+    color: aliceblue;
+}
+.spicial-category:hover .khat
+{
+    transform: scalex(1.5);
+}
+.paragrph-icon{
+    font-size: 40px;
+}
+.paragraph-text{
+    padding: 0px 20px;
+}
+
+
+.products-title
+{
+    text-align: center;
+}
+.product-hover:hover .khat
+{
+    transform: scalex(1.5);
+}
+.section{
+   
+    width: 75%;
+    height: 600px;
+    background-image: url(../Img/Screenshot\ 2024-09-27\ 195420.png);
+    margin: auto;
+    /* background-repeat: no-repeat; */
+    background-size:cover
+
+}
+.header{
+    width: 92%;
+    height: 150px;
+    margin: auto;
+}
+.r,.m,.l{
+    width: 30px;
+    float: right;
+    margin: 10px;
+}
+.first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product-items img{
+    width: 350px;
+    height: 350px;
+}
+.second-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.t-shirt{
+    position: absolute;
+    z-index: 4;
+}
+.pantaloan
+{
+    position: absolute;
+    z-index: 5;
+    transform: scalex(0);
+    transition: 0.5s;
+    opacity: 0.9;
+}
+.traning-item
+{
+    position: relative;
+}
+.product-items:hover .pantaloan
+{
+    transform: scalex(1);
+
+}
+.product-items{
+    background-color: rgb(0, 0, 0);
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+.traning-item{
+    position: absolute;
+    left: 6%;
+    top: 0.05%;
+    transform: translate(-50%,-50%);
+
+}
+.item-information{
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+}
+.footer-icon{
+    width: 200px;
+    height: 250px;
+    /* background-color: azure; */
+    margin: auto;
+}
+.item-information{
+    color: aliceblue;
+}
+.pantaloan-icon{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.pantaloan-icon i
+{
+    background-color: rgb(151, 151, 151);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+}
+.footer-icon i{
+    color: aliceblue;
+    font-size: 37px;
+    margin-left: 10px;
+
+}
